@@ -14,6 +14,9 @@ spring:
           password: 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
 
 ead:
+  configServer:
+    username: configserver
+    password: 'ead123cs'
   serviceRegistry:
     username: serviceRegistry
     password: 'ead123sr'
