@@ -1,0 +1,30 @@
+server:
+  port: ${PORT}
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/DeadRon/ead-config-server-repo
+          default-label: main
+          username: ${GIT_USERNAME}
+          password: ${GIT_PASSWORD}
+
+encrypt:
+  key: jJoOlYD/2DAuNnZ3Wltzpdf-PIfVxlJfF3ya-l8=gbWAuueU?T9e-o79KkQ2M2j-KRWXts2/i4szPiX-lcQTQvuZ-UsR7jV=hpOef8dBe!ZIzQ/WjquDL61ULlKV53TY3OnIm3G8zCzKqkeg8VBNJy-R?kXmNOnK==TD8E?WGB42gkVgvnulyFNOrDGIxWaw4!GGsAXdlmUoUpDzHLz11t2q6IleolmR!DvkQ!QqeiouOCEIArbCoeoK8VfqaRIyIsCC64JthEv-7AikHLFtz1RxZ?pE01i7g9fPbYWu!e8mWWNnO5UBE-pV4ygkQJY8avH-TGPg4kg54rzfhnMa-U7jlBfWsvhw0Ty9trm-DlOXjGO/LcKnDi3VknYPGWGB7TzrqsIga8D2sQ2pHTCNrATJ3=9FIKltNu=D3wuHwJ7AW=xNC6zexxHo1n!oechDl/omQd4qKGxpZ?u/NMP87ueVIn-dMQ8/zclJfGh4p8rmJoHuH!66PlO987zIH2Rq
+
+
+
+ead:
+  configServer:
+    username: ${CONFIG_SERVER_USERNAME}
+    password: ${CONFIG_SERVER_PASSOWORD}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URL}
+  instance:
+    hostname: ${APP_DOMAIN_NAME}
+    non-secure-port: 80
